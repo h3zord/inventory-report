@@ -22,9 +22,9 @@ class SimpleReport:
 
     @staticmethod
     def empresa_com_mais_produtos(products):
-        dict_empresas = Counter(
-            [product["nome_da_empresa"] for product in products]
-        )
+        dict_empresas = Counter([
+            product["nome_da_empresa"] for product in products])
+
         empresa_mais_frequente = dict_empresas.most_common()[0][0]
         return empresa_mais_frequente
 
